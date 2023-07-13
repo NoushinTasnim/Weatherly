@@ -1,6 +1,6 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:weatherly/Services/weather.dart';
 import 'package:weatherly/constants.dart';
 import 'package:weatherly/model/hour_data_info.dart';
@@ -87,7 +87,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   child: SingleChildScrollView(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -96,7 +96,7 @@ class _LocationScreenState extends State<LocationScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               LocationButton(
-                                  data: data,
+                                data: data,
                                 onPressed: () async{
                                   is_loading = true;
                                   var weatherData = await WeatherData().getLocationWeather();

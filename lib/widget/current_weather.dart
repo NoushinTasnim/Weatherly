@@ -36,12 +36,12 @@ class CurrentWeatherData extends StatelessWidget {
                 )
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
             Text(
                 data.condition,
                 style: GoogleFonts.abhayaLibre(
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.w900,
                   textStyle: TextStyle(
                     letterSpacing: 2,

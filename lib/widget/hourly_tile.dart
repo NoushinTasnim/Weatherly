@@ -53,8 +53,8 @@ class ListTileWidget extends StatelessWidget {
             ),
             BoxShadow(
               color: Colors.white.withOpacity(0.1),
-              blurRadius: 1,
-              offset: Offset(2, 4),
+              blurRadius: 0,
+              offset: Offset(0, 2),
             ),
           ],
           borderRadius: BorderRadius.circular(48),
